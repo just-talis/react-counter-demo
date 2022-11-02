@@ -1,0 +1,60 @@
+.Counter{
+    background-image: linear-gradient(180deg, transparent , #000000 );
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 1.5s ease-in-out;
+}
+
+.Counter_container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.Counter_reset{
+    display: block;
+    padding: 10px;
+}
+.Counter_reset:hover > svg{
+    transform: scale(0.65) rotate(270deg) ;
+}
+
+.Counter_display{
+    display: inline;
+    font-size: 200px;
+    font-weight: 100;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    min-width: 250px;
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    height: max-content;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 40px;
+}
+
+button > svg {
+    transition: 0.5s;
+}
+
+button:hover > svg {
+    transform: scale(0.8);
+}
+section button:hover:last-of-type  > svg{
+    transform: scale(1.2);
+}
