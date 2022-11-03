@@ -12,7 +12,7 @@ const NoMatch = () => {
           </h1>
           <a href="/"> <BackIcon/> go back to counter</a>
         </div>
-        <LostCountIllustration />
+        <LostCountIllustration className={style.NoMatch_icon} />
       </section>
     </main>
   );
