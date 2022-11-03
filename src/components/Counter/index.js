@@ -112,7 +112,9 @@ function Counter() {
         <button
           onClick={decrement}
           onMouseDown={() => handleMouseDown("decrement")}
+          onTouchStart={()=>handleMouseDown("decrement")}
           onMouseUp={handleMouseUp}
+          onTouchEnd={handleMouseUp}
         >
           <MinusIcon />
         </button>
@@ -131,7 +133,9 @@ function Counter() {
         <button
           onClick={increment}
           onMouseDown={() => handleMouseDown("increment")}
+          onTouchStart={()=>handleMouseDown("increment")}
           onMouseUp={handleMouseUp}
+          onTouchEnd={handleMouseUp}
         >
           <AddIcon />
         </button>
