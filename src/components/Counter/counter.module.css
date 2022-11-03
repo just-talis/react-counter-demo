@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    transition: 1.5s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
 }
 
 
@@ -44,6 +44,7 @@ button{
     height: max-content;
     padding: 20px;
     transition: 0.2s;
+    z-index: 1;
 }
 
 button:hover{
