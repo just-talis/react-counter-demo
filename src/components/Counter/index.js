@@ -14,12 +14,14 @@ function Counter() {
   };
   const [count, increment, decrement, reset, setValue] = useCounter();
   const [state, setState] = useState(intiatlState);
+
   const handleStateChange = (change) => {
     setState({ ...state, ...change });
   };
 
   useEffect(() => {
     handleStateChange({ numLenght: String(count).length });
+     // eslint-disable-next-line
   }, [count]);
 
   const getStyle = (count) => {
