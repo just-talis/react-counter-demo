@@ -33,6 +33,7 @@ function Counter() {
       "#085078",
       "#4776e6",
       "#8e54e9",
+      "#1a2980"
     ];
     if (count === 0)
       return {
