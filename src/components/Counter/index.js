@@ -1,10 +1,9 @@
 import style from "./counter.module.css";
 import { AddIcon, MinusIcon, ResetIcon } from "../../assets/svg";
-import useCounter from "../../hooks/useCounter";
 import randomIntFromInterval from "../../utils/randomIntFromInterval";
 import { useState, useEffect } from "react";
 
-function Counter() {
+function Counter({count, increment, decrement, reset, setValue}) {
   const intiatlState = {
     numLenght: 0,
     startIncrement: false,
@@ -12,7 +11,6 @@ function Counter() {
     timeOutId: 0,
     intervalId: 0,
   };
-  const [count, increment, decrement, reset, setValue] = useCounter();
   const [state, setState] = useState(intiatlState);
 
   const handleStateChange = (change) => {

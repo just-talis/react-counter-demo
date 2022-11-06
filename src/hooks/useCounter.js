@@ -1,38 +1,25 @@
-import { useReducer } from "react";
+import { useState } from "react";
 
 const initialCount = 0;
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "increment":
-      return  state += 1 ;
-    case "decrement":
-      return state -= 1 ;
-    case "setValue":
-      return  state = action.value ;
-    default:
-      throw new Error();
-  }
-}
-
 export default function useCounter() {
-    const [state, dispatch] = useReducer(reducer, initialCount);
+    const [count, setCount] = useState(initialCount);
 
     const reset = () => {
-      dispatch({ type: "setValue", value: 0 });
+      setCount(0);
     };
     const increment = () => {
-      dispatch({ type: "increment" });
+      setCount(count + 1);
     };
     const decrement = () => {
-      dispatch({ type: "decrement" });
+      setCount(count - 1);
     };
     const setValue = (e) => {
-      dispatch({ type: "setValue", value: Number(e.currentTarget.textContent) });
+      setCount(Number(e.currentTarget.textContent));
     }
 
     return [
-        state, increment, decrement, reset, setValue
+      count, increment, decrement, reset, setValue
     ]
 }
 
