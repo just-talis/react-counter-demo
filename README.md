@@ -5,10 +5,10 @@
 
 ## Pages
 
- - [Counter using useState Custom Hook](https://beautiful-counter-demo.netlify.app/)
- - [Counter using useReducer](https://beautiful-counter-demo.netlify.app/counter-with-reducer)
- - [404](https://beautiful-counter-demo.netlify.app/lost)
- - [Error Bounder trigger page](https://beautiful-counter-demo.netlify.app/error)
+ - <a href="https://beautiful-counter-demo.netlify.app/" target="_blank">Counter using useState Custom Hook</a>
+ - <a href="https://beautiful-counter-demo.netlify.app/counter-with-reducer" target="_blank">Counter using useReducer</a>
+ - <a href="https://beautiful-counter-demo.netlify.app/lost" target="_blank">404</a>
+ - <a href="https://beautiful-counter-demo.netlify.app/error" target="_blank">Error Bounder trigger page</a>
 
 ## Extra Features
 
@@ -17,4 +17,4 @@
 
 ## Link
 
-visit : https://beautiful-counter-demo.netlify.app/
+visit : <a href="https://beautiful-counter-demo.netlify.app" target="_blank">https://beautiful-counter-demo.netlify.app</a> 
