@@ -1,6 +1,6 @@
 # Project Description
 
-**Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook - increment, decrement, reset, setValue. **
+Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook - increment, decrement, reset, setValue.
 
 
 ## Pages
