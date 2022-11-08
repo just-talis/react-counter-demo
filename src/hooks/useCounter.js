@@ -9,10 +9,10 @@ export default function useCounter() {
       setCount(0);
     };
     const increment = () => {
-      setCount(count + 1);
+      setCount(currectCount => currectCount + 1);
     };
     const decrement = () => {
-      setCount(count - 1);
+      setCount(currectCount => currectCount - 1);
     };
     const setValue = (e) => {
       setCount(Number(e.currentTarget.textContent));
